@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #e50914;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/menu_back4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+
+.hero-content {
+  position: absolute;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  margin: 5px 0;
+  animation: slide-in 1s ease-out forwards;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(0, 0, 0, 0.3);
+  backdrop-filter: blur(25px);
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 3px 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.third {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/*=============CONTENT===========*/
+
+.content {
+  height: 400px;
+  background-color: white;
+  width: 100%;
+}
+.headline h2 {
+  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  max-width: 430px;
+  font-size: 1.9rem;
+  margin-top: 50px;
+  left: 36%;
+  position: relative;
+}
+
+.headline h3 {
+  font-family: 'Satisfy', cursive;
+  position: relative;
+  padding: 40px 0;
+  left: 38%;
+  font-size: 1.6rem;
+}
+.headline p {
+  padding: 0 300px;
+  text-align: center;
+}
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+
+.background-content {
+  position: absolute;
+  color: white;
+}
+
+.background-content h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+.daily::before {
+  background-image: url(images/daily-2.jpg);
+}
+.starter::before {
+  background-image: url(images/starter.jpeg);
+}
+.fish::before {
+  background-image: url(images/fish_back.jpg);
+}
+.wrap::before {
+  background-image: url(images/wrap2.jpg);
+}
+.tacos::before {
+  background-image: url(images/tacosback.jpg);
+}
+.cottage::before {
+  background-image: url(images/vegbowl2.jpg);
+}
+.combo::before {
+  background-image: url(images/comboback.jpg);
+}
+.salad::before {
+  background-image: url(images/saladback1.jpg);
+}
+.sides::before {
+  background-image: url(images/sidesback.jpg);
+}
+.dessert::before {
+  background-image: url(images/sweetback.webp);
+}
+.drinks::before {
+  background-image: url(images/drinkback.jpg);
+}
+.items {
+  display: flex;
+  height: 500px;
+  width: 100vw;
+  background-color: white;
+  margin-top: 80px;
+  margin-left: 140px;
+}
+.items p {
+  padding: 0 0 15px 20px;
+}
+.items a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 4px 40px;
+  border-radius: 5px;
+  margin-left: 170px;
+  position: relative;
+  top: 6%;
+}
+.items a:hover {
+  background-color: rgb(149, 7, 7);
+}
+.items-1 {
+  margin-top: -50px;
+}
+img {
+  width: 300px;
+  height: 250px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 20px;
+  box-shadow: 0 2px 5px;
+}
+
+abbr {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*=========FOOTER SECTION===========*/
+
+.part2 {
+  height: 450px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.part2 h3 {
+  color: white;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  inline-size: 150px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 190px;
+  margin-left: 90px;
+  margin-right: 25px;
+  padding-top: 2px;
+  overflow-wrap: break-word;
+  border-bottom: 3px solid var(--primary-color);
+  border-top: 3px solid var(--primary-color);
+}
+.part2 ul li {
+  color: white;
+  list-style: none;
+  line-height: 30px;
+}
+
+.part2 ul a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.part2 ul a:hover {
+  color: var(--primary-color);
+}
+.list1,
+.list2,
+.list3 {
+  padding: 0 80px;
+}
+.list1 h4,
+.list2 h4,
+.list3 h4 {
+  color: gray;
+  font-size: 1.2rem;
+  margin-top: 140px;
+  letter-spacing: 2px;
+}
+
+.list4 {
+  margin-left: 30px;
+}
+.list4 h4 {
+  color: gray;
+  font-size: 1.2rem;
+  margin-top: 140px;
+  letter-spacing: 2px;
+}
+
+.list4 input {
+  padding-top: 50px;
+  width: 225px;
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.list4 a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  border: 2px solid var(--primary-color);
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.list4 a:hover {
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+footer p {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
