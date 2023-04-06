@@ -11,7 +11,6 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  
 }
 
 h1,
@@ -101,7 +100,6 @@ header {
 
 .content {
   width: 100%;
-  
 }
 .somethinggood {
   text-align: center;
@@ -282,8 +280,7 @@ header {
   margin-left: 460px;
 }
 
-
-.items{
+.items {
   padding-left: 250px;
 }
 
@@ -451,21 +448,19 @@ header {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  
-  backdrop-filter:blur(50%);
+
+  backdrop-filter: blur(50%);
 }
 .fortune .card {
   text-align: center;
   height: 200px;
   width: 300px;
-  
 }
-.fortune h4{
+.fortune h4 {
   font-size: 1.2rem;
   width: 300px;
-  
 }
-.fortune p{
+.fortune p {
   padding-top: 20px;
   font-size: 1rem;
 }

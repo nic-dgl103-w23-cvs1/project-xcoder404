@@ -71,6 +71,8 @@ h6 {
   animation: slide-in 1.5s ease-out forwards;
 }
 
+/* ======= HEADER =====*/
+
 header {
   position: fixed;
   top: 0;
@@ -83,7 +85,7 @@ header {
   display: flex;
   justify-content: space-around;
   background: rgb(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(25px);
 }
 .navbar ul {
   display: flex;
@@ -100,6 +102,10 @@ header {
   font-size: 1.1rem;
   transition: 0.3s ease;
 }
+.navbar ul li a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
 .first {
   border-bottom: 1px solid var(--primary-color);
 }
@@ -109,6 +115,7 @@ header {
 }
 
 /* ===== welcome section =====*/
+
 .content {
   display: flex;
   width: 100%;
@@ -157,8 +164,6 @@ header {
   margin-left: -65px;
   z-index: -1;
 }
-
-/* =====Footer===== */
 
 /* ===== SPECIAL SECTION ======*/
 
@@ -246,6 +251,8 @@ header {
   height: 230px;
   margin-left: -20px;
 }
+
+/* ======== ABOUT US SECTIONS ========*/
 
 .chef,
 .outlet,
@@ -342,6 +349,8 @@ header {
   margin-left: 30px;
 }
 
+/* ============ GIFT SECTION ==========*/
+
 .gift {
   height: 400px;
   width: 100%;
@@ -434,6 +443,8 @@ header {
   transition: 0.3s ease-in-out;
 }
 
+/* ======= ANIMATION ===*/
+
 @keyframes slide-in {
   from {
     transform: translateY(-30%);
@@ -444,6 +455,8 @@ header {
     opacity: 1;
   }
 }
+
+/* ========== FOOTER =======*/
 
 .part2 {
   height: 450px;
@@ -533,4 +546,3 @@ footer p {
   background-color: black;
   text-align: center;
 }
-
